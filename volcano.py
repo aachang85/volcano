@@ -63,12 +63,9 @@ with col1:
         "A rapid drop means the subsurface plug has failed, and magma is rushing up. "
         "Fountaining usually starts 30-90 minutes after the drop begins."
     )
-    
-    # Your updated direct image URL
+    # Direct live URL to the past 2 days tilt plot at Uēkahuna (UWD)
     tilt_url = "https://volcanoes.usgs.gov/vsc/captures/kilauea/UWD-TILT-2day.png"
-    
-    # Standard image display matching the webcams layout
-    st.image(tilt_url, caption="Real-time 2-Day Summit Tilt (UWD)", use_container_width=True).components.v1.iframe(monitoring_url, height=500, scrolling=True)
+    st.image(tilt_url, caption="Real-time 2-Day Summit Tilt (UWD) - Refresh page to update", use_container_width=True)
 
 with col2:
     st.subheader("Live Thermal Rim View (K2cam)")
