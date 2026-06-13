@@ -64,7 +64,8 @@ with col1:
         "Fountaining usually starts 30-90 minutes after the drop begins."
     )
     # Direct live URL to the past 2 days tilt plot at Uēkahuna (UWD)
-    tilt_url = "https://volcanoes.usgs.gov/vsc/images/vsc_images/KILAUEA_tilt_2day.png"
+# Direct live URL to the past 2 days tilt plot at Uēkahuna (UWD)
+    tilt_url = "https://volcanoes.usgs.gov/vsc/images/vsc_images/KILAUEA_summit_tilt_2day.png"
     st.image(tilt_url, caption="Real-time 2-Day Summit Tilt (UWD) - Refresh page to update", use_container_width=True)
 
 with col2:
