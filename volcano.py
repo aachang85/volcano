@@ -60,13 +60,16 @@ with col1:
     st.subheader("Summit Tiltmeter (UWD)")
     st.markdown(
         "**What to watch for:** Look for the line to bend **sharply downward**. "
-        "A rapid drop means the subsurface plug has failed, and magma is rushing up."
+        "A rapid drop means the subsurface plug has failed, and magma is rushing up. "
+        "Fountaining usually starts 30-90 minutes after the drop begins."
     )
     
-    # Embed the official USGS page directly as an interactive frame
-    monitoring_url = "https://www.usgs.gov/volcanoes/kilauea/science/monitoring-data-kilauea"
-    st.components.v1.iframe(monitoring_url, height=500, scrolling=True)
+    # Your updated direct image URL
+    tilt_url = "https://volcanoes.usgs.gov/vsc/captures/kilauea/UWD-TILT-2day.png"
     
+    # Standard image display matching the webcams layout
+    st.image(tilt_url, caption="Real-time 2-Day Summit Tilt (UWD)", use_container_width=True).components.v1.iframe(monitoring_url, height=500, scrolling=True)
+
 with col2:
     st.subheader("Live Thermal Rim View (K2cam)")
     st.markdown(
